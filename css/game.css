@@ -1,0 +1,124 @@
+body{
+    background-image: url("../image/Festival.png");
+    background-size: cover;
+    height: 100%;
+
+}
+#page{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 5%;
+}
+#myQuestions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    width: 30%;
+    height: 500px;
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 15px rgba(255,0,153, 0.5), 0 0 30px rgba(255,0,153, 0.3); 
+   
+}
+#questionsContainer{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(255,0,153) ;
+    font-size: 30px
+}
+#instructions{
+    text-align: right;
+    color:whitesmoke;
+    padding: 10px 30px;
+    font-family: arial;
+    font-size: 15px !important;
+}
+
+h2{
+    font-family: "Amatic SC", sans-serif;  
+    text-align: center;
+}
+.text{
+    color:  #00ffff;
+}
+#boxes{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-image: url("../image/israel/1.jpg");
+    
+}
+.box{
+height: 33%;
+width: 33%;
+background-color: black;
+background-image: url("../image/game/game4.png");
+background-size: cover;
+border: solid rgba(255,0,153) 0.6px;
+transition: transform 0.3s ease;
+}
+.box:hover{
+    transform: scale(1.05);
+}
+.israelImage{
+display: none;
+}
+.option{
+border-radius:100px ;
+height: 35px;
+background-color: black;
+border: solid 1px;
+color: white;
+border-color:  #00ffff ;
+width: 80%;
+}
+#answersContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+
+}
+.option:hover {
+    background-color:#00ffff; /* צבע כאשר מעבירים עליו את העכבר */
+    color: rgb(0, 0, 0); /* לשנות את צבע הטקסט אם רוצים */
+}
+#questionsContainer,#answersContainer{
+    margin: 2vh;
+}
+.imgLife{
+height: 30px;
+width: 30px;
+display: block;
+}
+#life{
+    gap: 10px;
+    display: flex;
+}
+#containerGif{
+    align-items: center;
+    justify-content:center ;
+    height: 94vh;
+    width: 98vw;
+    display: none;
+}
+#containerGifWin{
+    align-items: center;
+    justify-content:center ;
+    height: 94vh;
+    width: 98vw;
+    background-image: url("../image/game/win.gif");
+    background-size: cover;
+    display: none;
+}
+
+

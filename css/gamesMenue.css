@@ -1,0 +1,136 @@
+body{
+    background-image:url("../image/Festival.png");
+    background-size: cover;
+    margin: 0;
+    
+}
+#title{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 60px;
+    color: rgba(255,0,153) ;
+   }
+   #title2{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 50px;
+    font-style: normal;
+    color:   #96ffff;
+   }
+
+   .ConstructionGame,.workingGame {
+ /* לכפתור  הגדרות כלליות */
+    height: 200px; 
+    width: 200px; 
+    border-radius: 50% ;
+    background-color: transparent;
+    /* הגדרות לאנימציה של האתר בבניה */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+   /* הגדרות של גבול הכפתור */
+   border: 5px white solid;
+   box-shadow: 0 0 10px #96ffff,
+  inset 0 0 15px #96ffff, 
+   inset 0 0 15px #96ffff,
+   0 0 10px #96ffff; 
+}
+
+.ConstructionGame::after {
+    /* הגדרות הטקסט שיופיע בעת מעבר עכבר */
+    content: "the game is under construction"; 
+    color: rgb(0, 0, 0);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.7); 
+    /* הגדרות האנימציה */
+    position: absolute; 
+    bottom: -100%;
+    left: 50%;
+    transform: translate(-50%, 0);    
+    border-radius: 50%;
+    height: 200px;
+    width: 200px; 
+    /* שינוי גובה עם אנימציה */
+    transition: bottom 0.5s ease; 
+}
+
+.ConstructionGame:hover::after {
+    bottom: 0;
+}
+
+#game1 {
+    background-image: url("../image/menu/game1.png");
+    background-size: cover; 
+}
+
+#game2 {
+    background-image: url("../image/menu/game2.png");
+    background-size: cover; 
+}
+
+#game3 {
+    background-image: url("../image/menu/game3.png");
+    background-size: cover;  
+    
+}
+#game4{
+    background-image: url("../image/menu/game4.png");
+    background-size: cover;  
+    transition: transform 0.3s ease;
+}
+
+#game4:hover {
+    transform: scale(1.1); /* הגדלת הכפתור ב-10% */
+}
+#body{
+    height: 75vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+#exsit, #body {
+    margin: 2vh; /* הוספת מרווח בין הכותרות לתמונות */
+}
+#exsit{
+    margin-left: 88vw;
+    
+}
+#buttons{
+    display: flex;
+    gap: 7vw;
+}
+h1, img {
+    margin: 30px; /* הוספת מרווח בין הכותרות לתמונות */
+}
+#title, #title2 {
+    margin: 0; /* הוספת מרווח בין הכותרות לתמונות */
+}
+#exsit img {
+    transition: transform 0.3s ease; /* הוספת מעבר חלק לאנימציה */
+    animation: pulse 2s infinite; /* הוספת אנימציה מתמשכת */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* גודל התמונה הרגיל */
+    }
+    50% {
+        transform: scale(1.09); /* גודל התמונה מוגדל מעט */
+    }
+}
+
+#exsit:hover img {
+    animation: none; /* מבטל את האנימציה כאשר העכבר מעל התמונה */
+    transform: scale(1.05); /* שומר על הגודל המוגדל */
+}
+
+

@@ -1,0 +1,86 @@
+body{
+ 
+    background-image: url("../image/Festival.png");
+    background-size: cover;
+    margin: 0;
+  }
+    #div{
+    
+      height: 100vh;
+      width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#logo{
+
+height: 60%;
+width: 60%;
+}
+
+
+
+        #enterButton {
+            width: 10vw;
+            height: 5vh;
+            border: 4px solid #96ffff;
+            border-radius: 60px;
+            background-color: transparent;
+            color: #96ffff;
+            font-family: "Big Shoulders Display", sans-serif;
+            font-weight: normal;
+            font-size: 25px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 1s infinite; /* אנימציה פולס מתמשכת */
+            transition: transform 0.3s ease; /* אנימציה חלקה בעת הה-hover */
+
+            
+            
+        }
+        @keyframes wobble {
+          0% { transform: rotate(0deg); }
+          15% { transform: rotate(5deg); }
+          30% { transform: rotate(-5deg); }
+          45% { transform: rotate(3deg); }
+          60% { transform: rotate(-3deg); }
+          75% { transform: rotate(1deg); }
+          100% { transform: rotate(0deg); }
+      }
+        /* הוספת אפקט מעבר בזמן לחיצה על הכפתור */
+        #enterButton:hover {
+          transform: scale(1.1); /* מגדיל את הכפתור ב-10% */
+          animation: wobble 0.5s forwards; /* הוספת אפקט התנדנדות */
+          transform: scale(1.1); /* הגדלה קלה של הכפתור בזמן הה-hover */
+       
+        }
+
+
+      
+    
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+        0% { border-color:  #b390c9; }
+        12.5% { border-color: #84a2db; }
+        25% { border-color: #5cb7f1; }
+        37.5% { border-color: #46c5fb; }
+        50% { border-color: #eb63a4; }
+        62.5% { border-color: #ae48b6; }
+        75% { border-color: #b334a6; }
+        88.5% { border-color: #cb44a4; }
+        100% { border-color: #f4a7cc; }
+    }
+  

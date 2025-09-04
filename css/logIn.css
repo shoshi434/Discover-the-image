@@ -1,0 +1,119 @@
+body{
+    background-image: url("../image/Festival.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+    height: 100vh;
+   
+
+}
+#formLogIn{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 50%;
+    width: 60%;
+} 
+#formSignIn{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 65%;
+    width: 60%;
+  
+
+}
+#containerFormLogIn, #containerFormSignIn {
+    height: 80vh;
+    width: 40vw;
+    background-color: rgba(50, 50, 50, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 15px rgba(255,0,153, 0.5), 0 0 30px rgba(255,0,153, 0.3); 
+   
+}
+.titleLog{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(255,0,153) ;
+}
+/* סטייל לכל השדות בטופס */
+.inputs{
+border-radius:100px ;
+    height: 35px;
+background-color: black;
+border: solid 1px;
+color: white;
+border-color:  #00ffff ;
+
+
+}
+#submitLogIn,#submitSignIn{
+font-size: 25px;
+   font-family: "Big Shoulders Display", sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background-color 0.5s ease; /* אפקט מעבר */
+}
+
+
+#submitLogIn:hover {
+    background-color:#00ffff; /* צבע כאשר מעבירים עליו את העכבר */
+    color: rgb(0, 0, 0); /* לשנות את צבע הטקסט אם רוצים */
+}
+#submitSignIn:hover {
+    background-color:#00ffff; /* צבע כאשר מעבירים עליו את העכבר */
+    color: rgb(0, 0, 0); /* לשנות את צבע הטקסט אם רוצים */
+}
+
+
+.transitionButtons {
+ 
+
+    font-size: 25px;
+   font-family: "Big Shoulders Display", sans-serif;
+    font-weight: normal;
+    background-color: transparent;
+    color:  rgba(255,0,153);
+    width: 25%;
+    cursor: pointer;
+    border: solid transparent;
+    animation: pulse 1s infinite; /* אנימציה פולס מתמשכת */
+    transition: transform 0.3s ease; /* אנימציה חלקה בעת הה-hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.transitionButtons:hover {
+    animation: none; /* עצירת האנימציה בעת הה-hover */
+    transform: scale(1.1); /* הגדלה קלה של הכפתור בזמן הה-hover */
+}
+/* #pagesLogo{
+height: 15%;
+width: 15%;
+
+
+margin-bottom: 15%;
+margin-top: 50%;
+}
+ */
+
+
+

@@ -1,0 +1,115 @@
+body{
+    background-image: url("../image/Festival.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+    height: 100vh;
+}
+#container{
+    gap: 40px;
+    height: 80vh;
+    width: 40vw;
+    background-color: rgba(50, 50, 50, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 15px rgba(255,0,153, 0.5), 0 0 30px rgba(255,0,153, 0.3); 
+}
+h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(255,0,153) ;
+}
+#scores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+.sum{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:100px ;
+    height: 60px;
+    width: 80%;
+ border: solid 1px;
+ color: #00ffff;
+border-color: #00ffff;;
+}
+.buttons {
+    width: 14vw;
+    height: 5vh;
+    border: 2px solid #96ffff;
+    border-radius: 60px;
+    background-color: transparent;
+    color: #00ffff;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 1s infinite; /* אנימציה פולס מתמשכת */
+    transition: transform 0.3s ease; /* אנימציה חלקה בעת הה-hover */
+
+    
+    
+}
+@keyframes wobble {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(5deg); }
+  30% { transform: rotate(-5deg); }
+  45% { transform: rotate(3deg); }
+  60% { transform: rotate(-3deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}
+/* הוספת אפקט מעבר בזמן לחיצה על הכפתור */
+.buttons:hover {
+  transform: scale(1.1); /* מגדיל את הכפתור ב-10% */
+  animation: wobble 0.5s forwards; /* הוספת אפקט התנדנדות */
+  transform: scale(1.1); /* הגדלה קלה של הכפתור בזמן הה-hover */
+
+}
+
+
+
+
+@keyframes pulse {
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.1);
+}
+100% {
+    transform: scale(1);
+}
+0% { border-color:  #b390c9; }
+12.5% { border-color: #84a2db; }
+25% { border-color: #5cb7f1; }
+37.5% { border-color: #46c5fb; }
+50% { border-color: #eb63a4; }
+62.5% { border-color: #ae48b6; }
+75% { border-color: #b334a6; }
+88.5% { border-color: #cb44a4; }
+100% { border-color: #f4a7cc; }
+}
+#buttonsComtainer{
+display: flex;
+gap: 40px;
+}

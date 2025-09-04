@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="icon" href="../image/icon.png">
+    <script defer src="../js/home.js"></script>
+    <link rel="stylesheet" href="../css/logIn.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  
+<div id="containerFormLogIn">
+    <h1 class="titleLog">Login of existing users</h1>
+   <form id="formLogIn" action="">
+    <input class="inputs" id="userName" type="text" required placeholder="   user name"  >
+    <input class="inputs"  id="password" type="password" required placeholder="   password" >
+    <label id="error" style="display: none; text-align: center; color: red; font-family: Arial, Helvetica, sans-serif;font-size: 12PX;" ></label>
+    <input class="inputs" id="submitLogIn" type="submit" value="send" >
+   </form>
+   <button class="transitionButtons" id="signInButton" >to register</button> 
+</div>
+
+
+<div id="containerFormSignIn" style="display: none;">
+    <h1 class="titleLog">Subscribe to our website!</h1>
+    <form  id="formSignIn">
+     <input class="inputs" id="userName1" type="text" required placeholder="   user name" >
+     <label for="" id="errorName"  style="display: none; text-align: center; color: red; font-family: Arial, Helvetica, sans-serif;"></label>
+     <input class="inputs" id="password1" type="password" required placeholder="   password"  >
+     <label for="" id="errorPassword"  style="display: none; text-align: center; color: red; font-family: Arial, Helvetica, sans-serif;"></label>
+     <input class="inputs" id="confirmPassword1" type="password" required placeholder="   confirm password"  >
+     <label for="" id="errorConfirmPassword"  style="display: none; text-align: center; color: red; font-family: Arial, Helvetica, sans-serif;"></label>
+     <input class="inputs" id="email1" itype="text" required placeholder="   email" >
+     <label for="" id="errorEmail"  style="display: none; text-align: center; color: red; font-family: Arial, Helvetica, sans-serif;"></label>
+     <input class="inputs" type="submit" value="send" id="submitSignIn">
+    </form>
+    <button class="transitionButtons"id="logInButton">enter</button>
+</div>
+<!-- <img id="pagesLogo" src="../image/home/logo.png" alt=""> -->
+
+</body>
+</html> 
