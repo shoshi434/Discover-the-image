@@ -16,6 +16,16 @@ const containerGif=document.querySelector("#containerGif")
 let index =currentUser.index3+1// אינדקס של מערך השאלות
 let life=3//מספר החיים בהתחלת המשחק
 let size = 1;
+
+const showFeedback = (message, isSuccess) => {//פונקציה שמציגה הודעת הצלחה/כישלון
+    questionElement.innerHTML = `<h2 style="color: ${isSuccess ? '#00ffff' : 'red'}; font-size: 40px; text-align: center;">${message}</h2>`;
+    answersContainer.innerHTML = "";
+}
+
+const clearQuestionArea = () => {//פונקציה שמנקה את אזור השאלות
+    questionElement.innerHTML = '<div id="instructions"><h2 class="text">בחרו קלף נוסף כדי להמשיך</h2></div>';
+    answersContainer.innerHTML = "";
+}
 const mix=(arr)=>{//פונקציה שמערבבת מערך
    let temp
    for(let i=0;i<arr.length;i++){
@@ -36,7 +46,7 @@ for (let i = 0; i < box.length; i++) {
     changeImg()
     box[i].addEventListener('click', () => {
        if(box[i].style.backgroundColor != "transparent"){//(הוסר)גורם שלא יהיה ניתן ללחוץ על אלמנט שכבר שקוף   
-       questionElement.textContent = questions[index].question
+       questionElement.innerHTML = `<div style="direction: rtl; text-align: center;">${questions[index].question}</div>`
        answersContainer.innerHTML = ""
       for (let j = 0; j < questions[index].options.length; j++) {
        let currentQuestion=questions[index]//משתנה ששומר מהי השאלה הנוכחית
@@ -46,6 +56,8 @@ for (let i = 0; i < box.length; i++) {
            answersContainer.append(option)
            option.addEventListener('click', () => {
                 if (option.textContent === currentQuestion.answer) {
+                    questionElement.innerHTML = `<h2 style="color: #00ffff; font-size: 40px; text-align: center;">כל הכבוד! תשובה נכונה! 🎉<br><br>בחרו קלף נוסף כדי להמשיך</h2>`;
+                    answersContainer.innerHTML = "";
                     box[i].style.backgroundColor = "transparent"
                     box[i].style.borderColor = "transparent"
                     box[i].style.backgroundImage="none"
@@ -56,6 +68,8 @@ for (let i = 0; i < box.length; i++) {
                 else {
                    life--
                    imgLife[life].style.display="none"
+                   questionElement.innerHTML = `<h2 style="color: red; font-size: 40px; text-align: center;">אופס... תשובה שגויה ❌<br><br>בחרו קלף נוסף כדי להמשיך</h2>`;
+                   answersContainer.innerHTML = "";
                    if(life<=0){
                    finishGame("lose")//שליחה לפונקציית סיום המשחק כשלון
                    }  
