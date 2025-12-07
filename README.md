@@ -2,20 +2,17 @@
 
 An interactive trivia game in Hebrew where players answer questions to reveal hidden images. The game includes three different topics: Israel, Space and Stars, and General Knowledge.
 
-![GitHub](https://img.shields.io/badge/License-MIT-blue.svg)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 ## 📋 Table of Contents
 
-- [Project Description](#project-description)
-- [Main Features](#main-features)
-- [Project Structure](#project-structure)
-- [Installation and Running](#installation-and-running)
-- [How to Play](#how-to-play)
-- [Technologies](#technologies)
-- [Responsive Features](#responsive-features)
+- [Project Description](#-project-description)
+- [Main Features](#-main-features)
+- [Project Structure](#-project-structure)
+- [Installation and Running](#-installation-and-running)
+- [How to Play](#-how-to-play)
+- [Technologies](#-technologies)
+- [Design and User Experience](#-design-and-user-experience)
+- [Main Code Files](#-main-code-files)
 
 ## 🎯 Project Description
 
@@ -45,7 +42,7 @@ An interactive trivia game in Hebrew where players answer questions to reveal hi
 - **Fully Responsive Design** for mobile, tablet and desktop
 - **Custom Fonts** from Google Fonts
 
-## 📁 מבנה הפרויקט
+## 📁 Project Structure
 
 ```
 games/
