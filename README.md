@@ -211,5 +211,5 @@ const questions = [
 
 ---
 
-Made with ❤️ in Israel
+SHO
 
